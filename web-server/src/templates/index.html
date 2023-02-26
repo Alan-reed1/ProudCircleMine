@@ -9,30 +9,22 @@
     <title>GEXP Graph</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="/" class="navbar-logo">Proud Circle</a>
-      <ul class="navbar-menu">
-        <li class="navbar-menu-item"><a href="#">News</a></li>
-        <li class="navbar-menu-item has-dropdown">
-          <a href="#">Leaderboards</a>
-          <ul class="dropdown">
-            <li><a href="#">GEXP</a></li>
-            <li class="has-dropdown">
-              <a href="#">More</a>
-              <ul class="dropdown">
-                <li><a href="#">Daily</a></li>
-                <li><a href="#">Weekly</a></li>
-                <li><a href="#">Monthly</a></li>
-                <li><a href="#">Yearly</a></li>
-                <li><a href="#">Lifetime</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="navbar-menu-item"><a href="#">Player Stats</a></li>
-      </ul>
+    <nav class="nav-flex-box" id="nav" class="navbar">
+        <a id="guild-name" href="#">Proud Circle</a>
+        <a href="#">News</a>
+          <div class="dropdown-menu">
+          <a >Leaderboards</a>
+            <div class="dropdown-menu-content">
+                <a href="#">Daily</a><br>
+                <a href="#">Weekly</a><br>
+                <a href="#">Monthly</a><br>
+                <a href="#">Yearly</a><br>
+                <a href="#">Lifetime</a><br>
+            </div>
+          </div>
+        <a href="#">GEXP</a>
+        <a href="#">More</a>
     </nav>
-    <div class="container">
       <h1>GEXP Graph</h1>
 
       <script type="text/javascript" src="{{ url_for('static', filename='scripts/index_form.js') }}"></script>
